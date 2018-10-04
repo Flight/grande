@@ -1,0 +1,68 @@
+$class-name: 'sprite';
+
+[class^="#{$class-name}-"], [class*=" #{$class-name}-"] {
+    display: inline-block;
+}
+.#{$class-name}-black-slider-arrow-left {
+    @include sprite($black-slider-arrow-left);
+}
+.#{$class-name}-black-slider-arrow-right {
+    @include sprite($black-slider-arrow-right);
+}
+.#{$class-name}-blue-arm {
+    @include sprite($blue-arm);
+}
+.#{$class-name}-blue-brush {
+    @include sprite($blue-brush);
+}
+.#{$class-name}-blue-building {
+    @include sprite($blue-building);
+}
+.#{$class-name}-blue-hat {
+    @include sprite($blue-hat);
+}
+.#{$class-name}-blue-leaf {
+    @include sprite($blue-leaf);
+}
+.#{$class-name}-blue-monitor {
+    @include sprite($blue-monitor);
+}
+.#{$class-name}-blue-pencil {
+    @include sprite($blue-pencil);
+}
+.#{$class-name}-blue-portfolio {
+    @include sprite($blue-portfolio);
+}
+.#{$class-name}-blue-rectangle {
+    @include sprite($blue-rectangle);
+}
+.#{$class-name}-blue-teamwork {
+    @include sprite($blue-teamwork);
+}
+.#{$class-name}-blue-truck {
+    @include sprite($blue-truck);
+}
+.#{$class-name}-orange-location {
+    @include sprite($orange-location);
+}
+.#{$class-name}-orange-refund {
+    @include sprite($orange-refund);
+}
+.#{$class-name}-orange-truck {
+    @include sprite($orange-truck);
+}
+.#{$class-name}-white-arrow-right {
+    @include sprite($white-arrow-right);
+}
+.#{$class-name}-white-link {
+    @include sprite($white-link);
+}
+.#{$class-name}-white-slider-arrow-left {
+    @include sprite($white-slider-arrow-left);
+}
+.#{$class-name}-white-slider-arrow-right {
+    @include sprite($white-slider-arrow-right);
+}
+.#{$class-name}-white-vk {
+    @include sprite($white-vk);
+}

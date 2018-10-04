@@ -4,12 +4,15 @@ const tsProject = ts.createProject('tsconfig.json');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
+const spritesmith = require('gulp.spritesmith');
+const merge = require('merge-stream');
 
 const PROJECT_ROOT = __dirname;
 const PROJECT_SOURCE = {
     'html': PROJECT_ROOT + '/',
     'scss': PROJECT_ROOT + '/private/scss/',
     'assets': PROJECT_ROOT + '/assets/',
+    'sprite': PROJECT_ROOT + '/sprite/',
     'ts': PROJECT_ROOT + '/private/ts/'
 };
 const DESTINATION_PATH = {
@@ -26,6 +29,9 @@ const PROJECT_PATTERNS = {
         PROJECT_SOURCE.scss + '**/*.scss',
         '!' + PROJECT_SOURCE.scss + '**/*.min.scss',
         '!' + PROJECT_SOURCE.scss + 'libs/*.scss'
+    ],
+    'sprite': [
+        PROJECT_SOURCE.sprite + '**/*.*'
     ],
     'assets': [
         PROJECT_SOURCE.assets + '**/*.*'
@@ -76,6 +82,23 @@ gulp.task('ts', () => {
 
 gulp.task('ts:watch', () => {
     gulp.watch(PROJECT_PATTERNS.ts, ['ts']);
+});
+
+gulp.task('sprite', function () {
+    const spriteData = gulp.src(PROJECT_PATTERNS.sprite).pipe(
+        spritesmith({
+            imgPath: '/assets/img/sprite.png',
+            imgName: 'sprite.png',
+            cssName: '_sprite-generated.scss',
+            cssFormat: 'scss'
+        })
+    );
+    const imgStream = spriteData.img
+        .pipe(gulp.dest(PROJECT_SOURCE.assets + '/img/'));
+    const scssStream = spriteData.css
+        .pipe(gulp.dest(PROJECT_SOURCE.scss + '/modules/'));
+
+    return merge(imgStream, scssStream);
 });
 
 gulp.task('watch', ['html:watch', 'scss:watch', 'ts:watch']);

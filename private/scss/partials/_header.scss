@@ -1,5 +1,197 @@
 $component-selector: '.header';
 
 #{$component-selector} {
+    position: relative;
+    margin: 0 auto;
+    background-color: #644c27;
+    color: $white;
+    min-height: 80px;
 
+    h1, h2, h3, h4, h5, h6 {
+        color: $white;
+    }
+    a {
+        &, &:hover, &:focus, &:active {
+            color: $white;
+        }
+    }
+    .container {
+        position: relative;
+    }
+    &__top {
+        @include clearfix();
+        position: absolute;
+        top: 0;
+        left: $grid-gutter-width / 2;
+        right: $grid-gutter-width / 2;
+        z-index: 200;
+    }
+    &-logo {
+        position: absolute;
+        top: 23px;
+        left: 5px;
+    }
+    &-nav {
+        margin: 27px 200px 0 113px;
+        font-size: $font-size-base * 13 / 16; // 13px
+        &__item {
+            display: inline;
+        }
+        &__link {
+            margin: 0 15px;
+        }
+    }
+    &-contacts {
+        position: absolute;
+        width: 196px;
+        top: 23px;
+        right: 0;
+        &__phone {
+            font-size: $font-size-base * 17 / 16; // 17px
+            letter-spacing: 0.75px;
+            line-height: 1;
+        }
+        &__small {
+            font-size: 11px;
+            margin-left: 4px;
+            letter-spacing: 0.7px;
+        }
+    }
+    &-slider {
+        &__block {
+            height: 604px;
+        }
+        &__pic {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            right: 0;
+            text-align: center;
+            &_left {
+                transform: translateX(0);
+                left: 0;
+                right: auto;
+            }
+            &_right {
+                transform: translateX(0);
+                left: auto;
+            }
+        }
+        &__content {
+            padding: 165px 0 50px;
+            z-index: 10;
+        }
+        &__text {
+            margin-top: 40px;
+            font-size: $font-size-sm;
+        }
+        &__button {
+            margin-top: 68px;
+
+            .btn {
+                box-shadow: 0 15px 48px 0 rgba(88,178,246,0.48);
+            }
+        }
+        &__arrow {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            margin-top: 12px;
+
+            &_left {
+                left: 70px;
+            }
+            &_right {
+                right: 70px;
+            }
+            &:hover {
+                opacity: .5;
+            }
+        }
+        &__pages {
+            position: absolute;
+            bottom: 26px;
+            left: 50%;
+            z-index: 200;
+            margin-left: 22.7%;
+        }
+        &__page {
+            cursor: pointer;
+            margin: 0 3px;
+            display: inline-block;
+            width: 13px;
+            height: 13px;
+            border-radius: 6.5px;
+            background-color: #fff;
+            opacity: .17;
+            &:hover {
+                opacity: 1;
+            }
+            &.active {
+                opacity: .46;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    #{$component-selector} {
+        &-slider {
+            &__content {
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+            &__arrow {
+                &_left {
+                    left: 20px;
+                }
+                &_right {
+                    right: 20px;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    #{$component-selector} {
+        &-nav {
+            float: none;
+            margin: 60px 20px 0;
+            text-align: center;
+            &__link {
+                display: inline-block;
+                margin: 3px 15px;
+            }
+        }
+        &-contacts {
+            width: auto;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    #{$component-selector} {
+        &-nav {
+            margin-left: 0;
+            margin-right: 0;
+            &__link {
+                margin: 3px 10px;
+            }
+        }
+        &-slider {
+            &__content {
+                padding-left: 80px;
+                padding-right: 80px;
+            }
+            &__button {
+                margin-top: 40px;
+            }
+            &__pages {
+                transform: translateX(-50%);
+                margin-left: 0;
+            }
+        }
+    }
 }

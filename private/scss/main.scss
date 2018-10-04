@@ -9,6 +9,12 @@ body {
     color: $font-color-base;
     min-width: 320px;
     position: relative;
+    overflow: hidden;
+}
+
+.wrapper {
+    max-width: $wrapper-max-width;
+    margin: 0 auto;
 }
 
 ul {
@@ -17,9 +23,19 @@ ul {
     padding: 0;
 }
 
-.main-content {
-    max-width: $content-max-width;
-    margin: 0 auto;
+.btn {
+    font-size: $font-size-sm;
+    letter-spacing: 0.5px;
+    &_arrow {
+        .arrow {
+            margin-left: 98px;
+        }
+    }
+}
+
+h1, .h1 {
+    letter-spacing: 1px;
+    line-height: 1.2;
 }
 
 @include media-breakpoint-down(lg) {
@@ -46,5 +62,12 @@ ul {
     }
     h2, .h2 {
         font-size: $h2-font-size-sm;
+    }
+    .btn {
+        &_arrow {
+            .arrow {
+                margin-left: 15px;
+            }
+        }
     }
 }
