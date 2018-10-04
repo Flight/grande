@@ -1,0 +1,50 @@
+@import 'modules/all';
+
+@import 'bootstrap/all';
+
+@import 'modals/all';
+@import 'partials/all';
+
+body {
+    color: $font-color-base;
+    min-width: 320px;
+    position: relative;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-content {
+    max-width: $content-max-width;
+    margin: 0 auto;
+}
+
+@include media-breakpoint-down(lg) {
+    h1, .h1 {
+        font-size: $h1-font-size-lg;
+    }
+    h2, .h2 {
+        font-size: $h2-font-size-lg;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    h1, .h1 {
+        font-size: $h1-font-size-md;
+    }
+    h2, .h2 {
+        font-size: $h2-font-size-md;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    h1, .h1 {
+        font-size: $h1-font-size-sm;
+    }
+    h2, .h2 {
+        font-size: $h2-font-size-sm;
+    }
+}

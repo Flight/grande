@@ -1,0 +1,41 @@
+$font-family-base:            'Montserrat', sans-serif;
+$font-color-base:             #6F7D9A;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  hg: 1440px
+) !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1160px,
+  hg: 1440px
+);
+
+$content-max-width: 940px;
+
+$primary:                     #F5B540;
+$secondary:                   #0792FC;
+
+$font-size-base:              1rem;                      // 16px
+$font-size-sm:                $font-size-base * 14 / 16; // 14px
+$font-size-xs:                $font-size-base * 11 / 16; // 11px
+
+$h1-font-size:                $font-size-base * 44 / 16; // 44px
+$h1-font-size-lg:             $font-size-base * 40 / 16; // 40px
+$h1-font-size-md:             $font-size-base * 30 / 16; // 30px
+$h1-font-size-sm:             $font-size-base * 26 / 16; // 20px
+$h2-font-size:                $font-size-base * 34 / 16; // 34px
+$h2-font-size-lg:             $font-size-base * 30 / 16; // 30px
+$h2-font-size-md:             $font-size-base * 28 / 16; // 28px
+$h2-font-size-sm:             $font-size-base * 26 / 16; // 26px
+$h3-font-size:                $font-size-base * 22 / 16; // 22px
+$h4-font-size:                $font-size-base * 20 / 16; // 20px
+$h5-font-size:                $font-size-base * 18 / 16; // 18px
+$h6-font-size:                $font-size-base * 16 / 16; // 16px
