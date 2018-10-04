@@ -1,3 +1,5 @@
+/* global __dirname */
+
 const gulp = require('gulp');
 const ts = require('gulp-typescript');
 const tsProject = ts.createProject('tsconfig.json');
@@ -87,7 +89,7 @@ gulp.task('ts:watch', () => {
 gulp.task('sprite', function () {
     const spriteData = gulp.src(PROJECT_PATTERNS.sprite).pipe(
         spritesmith({
-            imgPath: '/assets/img/sprite.png',
+            imgPath: '../assets/img/sprite.png',
             imgName: 'sprite.png',
             cssName: '_sprite-generated.scss',
             cssFormat: 'scss'
