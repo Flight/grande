@@ -7,19 +7,69 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="main-content">
-                <h1>Header</h1>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__top">
+                    <div class="header-logo"><a href="#"><img src="assets/img/header-logo.png" width="88" height="24" alt="LaScala Grande"></a></div>
+                    <nav class="header-nav">
+                        <ul class="header-nav__list">
+                            <li class="header-nav__item">
+                                <a href="#" class="header-nav__link">Для кого</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="#" class="header-nav__link">Типы столов</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="#" class="header-nav__link">Особенности</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="#" class="header-nav__link">Фото</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="#" class="header-nav__link">Заказать</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <a href="#" class="header-nav__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header-contacts">
+                        <div class="header-contacts__phone">+375(44) 703 02 69</div>
+                        <div class="header-contacts__small"><a href="#">Вам перезвонить?</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-slider">
+                <div class="header-slider__block">
+                    <img src="assets/pics/header-pics/pic-1.jpg" width="1440" height="604" class="header-slider__pic header-slider__pic_right"> <!-- header-slider__pic_left -->
+                    <div class="container header-slider__content">
+                        <h1>Эргономичный<br class="hidden-xs">стол в стиле лофт</h1>
+                        <p class="header-slider__text">
+                            Экологичный мультифункциональный<br class="hidden-xs">
+                            стол по цене на 30% ниже аналогов
+                        </p>
+                        <div class="header-slider__button">
+                            <a href="#" class="btn btn-primary btn_arrow">ЗАКАЗАТЬ <span class="arrow sprite-white-arrow-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <span class="header-slider__arrow header-slider__arrow_left sprite-white-slider-arrow-left"></span>
+                <span class="header-slider__arrow header-slider__arrow_right  sprite-white-slider-arrow-right"></span>
+                <div class="header-slider__pages">
+                    <span class="header-slider__page active"></span>
+                    <span class="header-slider__page"></span>
+                    <span class="header-slider__page"></span>
+                </div>
             </div>
         </header>
 
-        <div class="main-content">
+        <div class="container">
             Content
         </div>
 
-        <footer>
-            <div class="main-content">
+        <footer class="footer">
+            <div class="container">
                 Footer
             </div>
         </footer>
