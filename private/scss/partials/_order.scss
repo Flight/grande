@@ -81,6 +81,9 @@ $form-color: #F5B540;
         .form-group {
             margin-bottom: 1.8rem;
         }
+        .form-control:disabled, .form-control[readonly] {
+            background-color: $input-bg;
+        }
     }
     &__price {
         font-weight: bold;
