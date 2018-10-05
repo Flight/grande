@@ -1,0 +1,120 @@
+$component-selector: '.order';
+$form-color: #F5B540;
+
+#{$component-selector} {
+    background: #FFFFFF;
+    border: 1px solid #FAFAFA;
+    box-shadow: 0 10px 39px 0 rgba(195,128,7,0.23);
+    margin: 118px -21px 0;
+    display: flex;
+
+    &__left {
+        width: 54%;
+        padding: 75px 32px 113px;
+    }
+    &-gallery {
+        &__thumbs {
+            margin-top: 10px;
+            padding-right: 70px;
+        }
+        &__thumb {
+            opacity: .5;
+            @include transition(opacity .2s ease-in-out);
+            &.active, &:hover {
+                opacity: 1;
+            }
+        }
+    }
+    &-info {
+        margin-top: 96px;
+        &__icon {
+            float: left;
+        }
+        &__text {
+            margin-left: 40px;
+            font-size: $font-size-sm;
+        }
+        &__block{
+            margin-top: 15px;
+            &:first-child {
+                #{$component-selector}-info {
+                    &__text {
+                        margin-left: 55px;
+                    }
+                }
+            }
+        }
+    }
+    &__right {
+        background: $form-color;
+        width: 46%;
+        color: $white;
+        padding: 40px 20px 20px 56px;
+
+        h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+            color: $white;
+        }
+        a, .btn {
+            color: $white;
+            &, &:hover, &:focus, &:active {
+                color: #ffff;
+            }
+        }
+        .btn {
+            box-shadow: 0 11px 37px 0 rgba(255,255,255,0.50);
+            letter-spacing: 0.7px;
+            background: #FFFFFF;
+            color: $form-color;
+            &:hover {
+                color: $black;
+            }
+        }
+    }
+    &__title {
+        letter-spacing: 0.7px;
+        font-size: $font-size-base * 26 / 16; // 26px
+        margin-bottom: 40px;
+    }
+    &__form {
+        max-width: 262px;
+        font-size: $font-size-base * 18 / 16; // 18px
+        .form-group {
+            margin-bottom: 1.8rem;
+        }
+    }
+    &__price {
+        font-weight: bold;
+        font-size: $font-size-base * 44 / 16; // 44px
+        margin-bottom: 12px;
+    }
+}
+@include media-breakpoint-down(md) {
+    #{$component-selector} {
+        &__right {
+            padding-left: 30px;
+        }
+        &-info {
+            margin-top: 20px;
+            padding-right: 0;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    #{$component-selector} {
+        display: block;
+        &__left {
+            width: auto;
+            padding: 25px;
+        }
+        &__right {
+            width: auto;
+        }
+        &__title {
+            margin-bottom: 15px;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+    }
+}

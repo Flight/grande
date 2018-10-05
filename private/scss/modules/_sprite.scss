@@ -69,3 +69,6 @@ $class-name: 'sprite';
 .#{$class-name}-white-vk {
     @include sprite($white-vk);
 }
+.#{$class-name}-orange-arrow-right {
+    @include sprite($orange-arrow-right);
+}

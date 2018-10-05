@@ -313,6 +313,77 @@
                     <span class="gallery__arrow gallery__arrow_right"><span class="sprite-black-slider-arrow-right"></span></span>
                 </div>
             </section>
+
+            <section class="order">
+                <h2 hidden>Оформление заказа</h2>
+                <div class="order__left">
+                    <div class="order-gallery">
+                        <div class="order-gallery__big text-center"><img src="assets/pics/order-pics/pic-1.jpg" alt="" width="277" height="284"></div>
+                        <ul class="order-gallery__thumbs row align-items-center justify-content-center">
+                            <li class="order-gallery__thumb col-6 col-sm-4 text-center active">
+                                <a href="#">
+                                    <img src="assets/pics/order-pics/pic-1-small.jpg" alt="" width="62" height="60">
+                                </a>
+                            </li>
+                            <li class="order-gallery__thumb col-6 col-sm-4 text-center">
+                                <a href="#">
+                                    <img src="assets/pics/order-pics/pic-2-small.jpg" alt="" width="126" height="87">
+                                </a>
+                            </li>
+                            <li class="order-gallery__thumb col-6 col-sm-4 text-center">
+                                <a href="#">
+                                    <img src="assets/pics/order-pics/pic-3-small.jpg" alt="" width="126" height="87">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="order-info row justify-content-center">
+                        <div class="order-info__block col-12 col-md-6 col-lg-4">
+                            <span class="order-info__icon sprite-orange-truck"></span>
+                            <div class="order-info__text">Бесплатная доставка по Минску</div>
+                        </div>
+                        <div class="order-info__block col-12 col-md-6 col-lg-4">
+                            <span class="order-info__icon sprite-orange-location"></span>
+                            <div class="order-info__text">Поможем доставить по всей Беларуси</div>
+                        </div>
+                        <div class="order-info__block col-12 col-md-6 col-lg-4">
+                            <span class="order-info__icon sprite-orange-refund"></span>
+                            <div class="order-info__text">Можно оплатить картой</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order__right">
+                    <div class="order__title">Выберите модель стола</div>
+                    <form class="order__form">
+                        <div class="form-group">
+                            <label for="model">Модель</label>
+                            <select id="model" class="form-control">
+                                <option value="school">Школьный</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="metal">Металл</label>
+                            <select id="metal" class="form-control">
+                                <option value="school">Черный</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="side">Кромка</label>
+                            <select id="side" class="form-control">
+                                <option value="school">Белая</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="size">Размер</label>
+                            <input id="size" value="180x60" class="form-control">
+                        </div>
+
+                        <div class="order__price">150 BYN</div>
+
+                        <button tpye="submit" class="btn btn_arrow">ЗАКАЗАТЬ <span class="arrow sprite-orange-arrow-right"></span></button>
+                    </form>
+                </div>
+            </section>
         </div>
 
         <footer class="footer">
