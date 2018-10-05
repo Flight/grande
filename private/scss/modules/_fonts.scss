@@ -1,1 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i|Abril+Fatface|Montserrat:400,400i,600,600i&subset=cyrillic');
+
+@font-face {
+    font-family: 'Muller';
+    src: url('../assets/fonts/MullerExtraBold.eot');
+    src: url('../assets/fonts/MullerExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/MullerExtraBold.woff2') format('woff2'),
+        url('../assets/fonts/MullerExtraBold.woff') format('woff'),
+        url('../assets/fonts/MullerExtraBold.ttf') format('truetype'),
+        url('../assets/fonts/MullerExtraBold.svg#MullerExtraBold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}

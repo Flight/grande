@@ -30,6 +30,9 @@ $class-name: 'sprite';
 .#{$class-name}-blue-pencil {
     @include sprite($blue-pencil);
 }
+.#{$class-name}-blue-pencil-small {
+    @include sprite($blue-pencil-small);
+}
 .#{$class-name}-blue-portfolio {
     @include sprite($blue-portfolio);
 }

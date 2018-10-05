@@ -9,12 +9,12 @@ body {
     color: $font-color-base;
     min-width: 320px;
     position: relative;
-    overflow: hidden;
 }
 
 .wrapper {
     max-width: $wrapper-max-width;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 ul {
@@ -36,6 +36,11 @@ ul {
 h1, .h1 {
     letter-spacing: 1px;
     line-height: 1.2;
+}
+
+h2, .h2 {
+    letter-spacing: 1px;
+    line-height: 1.35;
 }
 
 @include media-breakpoint-down(lg) {
