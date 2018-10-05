@@ -22,8 +22,8 @@ $component-selector: '.header';
         @include clearfix();
         position: absolute;
         top: 0;
-        left: $grid-gutter-width / 2;
-        right: $grid-gutter-width / 2;
+        left: 32px;
+        right: 32px;
         z-index: 200;
     }
     &-logo {
@@ -79,7 +79,7 @@ $component-selector: '.header';
             }
         }
         &__content {
-            padding: 165px 0 50px;
+            padding: 165px 17px 50px;
             z-index: 10;
         }
         &__text {
@@ -175,6 +175,10 @@ $component-selector: '.header';
 
 @include media-breakpoint-down(sm) {
     #{$component-selector} {
+        &__top {
+            left: 15px;
+            right: 15px;
+        }
         &-nav {
             margin-left: 0;
             margin-right: 0;

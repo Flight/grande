@@ -3,6 +3,7 @@ $component-selector: '.technical-info';
 #{$component-selector} {
     position: relative;
     margin-top: 112px;
+    padding-bottom: 48px;
     &::before {
         content: '';
         position: absolute;
@@ -35,13 +36,13 @@ $component-selector: '.technical-info';
                 &__data {
                     float: left;
                     margin-right: 0;
-                    margin-left: 85px;
+                    margin-left: 102px;
                 }
                 &__pic {
                     float: right;
                     padding-top: 10px;
                     margin-left: 0;
-                    margin-right: 102px;
+                    margin-right: 120px;
                     text-align: right;
                 }
                 &__arrows {
@@ -84,7 +85,7 @@ $component-selector: '.technical-info';
                     padding-top: 28px;
                 }
                 &__pic {
-                    margin-right: 122px;
+                    margin-right: 139px;
                 }
             }
         }
@@ -93,7 +94,7 @@ $component-selector: '.technical-info';
         float: left;
         position: relative;
         padding-top: 11px;
-        margin-left: 23px;
+        margin-left: 40px;
         max-width: 480px;
     }
     &__arrows {
@@ -102,7 +103,7 @@ $component-selector: '.technical-info';
         left: 178px;
     }
     &__data {
-        margin-left: 515px;
+        margin-left: 532px;
         width: 300px;
     }
     &__name {
@@ -165,7 +166,6 @@ $component-selector: '.technical-info';
                         margin-left: 0;
                     }
                     &__pic {
-                        float: none;
                         margin-right: 0;
                         text-align: center;
                     }
@@ -177,9 +177,27 @@ $component-selector: '.technical-info';
 @include media-breakpoint-down(sm) {
     #{$component-selector} {
         &__pic {
-            float: none;
             text-align: center;
             margin-left: 0;
+        }
+        &__data {
+            margin-left: 0;
+        }
+        &__block {
+            &_right {
+                #{$component-selector} {
+                    &__pic {
+                        float: none;
+                    }
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-down(xs) {
+    #{$component-selector} {
+        &__pic {
+            float: none;
         }
         &__data {
             margin-left: 0;
