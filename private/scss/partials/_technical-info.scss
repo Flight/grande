@@ -6,7 +6,7 @@ $component-selector: '.technical-info';
     &::before {
         content: '';
         position: absolute;
-        background: #f1f6fa url(../assets/img/bg-light-blue.png) 50% 0 no-repeat;
+        background:  url(../assets/img/bg-light-blue.png) 50% 0 no-repeat;
         width: 1440px;
         top: 0;
         bottom: 0;
@@ -14,6 +14,19 @@ $component-selector: '.technical-info';
         margin-left: -720px;
         z-index: -1;
     }
+    &::after {
+        content: '';
+        position: absolute;
+        background-image: linear-gradient(#f1f6fa 217px, #f3f7fa 100%);
+        width: 1440px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -720px;
+        z-index: -2;
+    }
+
     &__block {
         @include clearfix();
         margin-top: 85px;
