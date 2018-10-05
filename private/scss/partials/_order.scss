@@ -65,7 +65,7 @@ $form-color: #F5B540;
             letter-spacing: 0.7px;
             background: #FFFFFF;
             color: $form-color;
-            &:hover {
+            &:hover, &:focus, &:active {
                 color: $black;
             }
         }
