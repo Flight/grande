@@ -40,26 +40,58 @@
                     </div>
                 </div>
             </div>
-            <div class="header-slider">
-                <div class="header-slider__block">
-                    <img src="assets/pics/header-pics/pic-1.jpg" width="1440" height="604" class="header-slider__pic header-slider__pic_right"> <!-- header-slider__pic_left -->
-                    <div class="container header-slider__content">
-                        <h1>Эргономичный<br class="hidden-xs">стол в стиле лофт</h1>
-                        <p class="header-slider__text">
-                            Экологичный мультифункциональный<br class="hidden-xs">
-                            стол по цене на 30% ниже аналогов
-                        </p>
-                        <div class="header-slider__button">
-                            <a href="#" class="btn btn-primary btn_arrow">ЗАКАЗАТЬ <span class="arrow sprite-white-arrow-right"></span></a>
+            <div class="header-slider carousel slide carousel-fade" data-ride="carousel" id="header-gallery">
+                <div class="carousel-inner">
+                    <div class="header-slider__block carousel-item active">
+                        <img src="assets/pics/header-pics/pic-1.jpg" width="1440" height="604" class="header-slider__pic header-slider__pic_right"> <!-- header-slider__pic_left -->
+                        <div class="container header-slider__content">
+                            <h1>Эргономичный<br class="hidden-xs">стол в стиле лофт</h1>
+                            <p class="header-slider__text">
+                                Экологичный мультифункциональный<br class="hidden-xs">
+                                стол по цене на 30% ниже аналогов
+                            </p>
+                            <div class="header-slider__button">
+                                <a href="#" class="btn btn-primary btn_arrow">ЗАКАЗАТЬ <span class="arrow sprite-white-arrow-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-slider__block carousel-item">
+                        <img src="assets/pics/header-pics/pic-2.jpg" width="1440" height="604" class="header-slider__pic header-slider__pic_left"> <!-- header-slider__pic_right -->
+                        <div class="container header-slider__content">
+                            <h1>Ещё один стол,<br class="hidden-xs">немного менее эргономичный</h1>
+                            <p class="header-slider__text">
+                                Описание этого<br class="hidden-xs">
+                                прекрасного стола
+                            </p>
+                            <div class="header-slider__button">
+                                <a href="#" class="btn btn-primary btn_arrow">ЗАКАЗАТЬ <span class="arrow sprite-white-arrow-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-slider__block carousel-item">
+                        <img src="assets/pics/header-pics/pic-3.jpg" width="1440" height="604" class="header-slider__pic header-slider__pic_left"> <!-- header-slider__pic_right -->
+                        <div class="container header-slider__content">
+                            <h1>Ещё более<br class="hidden-xs">эргономичный стул</h1>
+                            <p class="header-slider__text">
+                                Ещё один текст про<br class="hidden-xs">
+                                эрогомичный стул
+                            </p>
+                            <div class="header-slider__button">
+                                <a href="#" class="btn btn-primary btn_arrow">ЗАКАЗАТЬ <span class="arrow sprite-white-arrow-right"></span></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <span class="header-slider__arrow header-slider__arrow_left"><span class="sprite-white-slider-arrow-left"></span></span>
-                <span class="header-slider__arrow header-slider__arrow_right"><span class="sprite-white-slider-arrow-right"></span></span>
-                <div class="header-slider__pages">
-                    <span class="header-slider__page active"></span>
-                    <span class="header-slider__page"></span>
-                    <span class="header-slider__page"></span>
+                <a href="#header-gallery" class="header-slider__arrow header-slider__arrow_left" data-slide="prev">
+                    <span class="sprite-white-slider-arrow-left"></span>
+                </a>
+                <a href="#header-gallery" class="header-slider__arrow header-slider__arrow_right" data-slide="next">
+                    <span class="sprite-white-slider-arrow-right"></span>
+                </a>
+                <div class="header-slider__pages carousel-indicators">
+                    <a data-target="#header-gallery" data-slide-to="0" class="header-slider__page active"></a>
+                    <a data-target="#header-gallery" data-slide-to="1" class="header-slider__page"></a>
+                    <a data-target="#header-gallery" data-slide-to="2" class="header-slider__page"></a>
                 </div>
             </div>
         </header>
@@ -298,19 +330,25 @@
                 </div>
             </section>
 
-            <section class="gallery">
-                <div class="gallery__content">
-                    <div class="gallery__block">
+            <section class="gallery carousel slide carousel-fade" data-ride="carousel" id="gallery">
+                <div class="gallery__content carousel-inner">
+                    <div class="gallery__block carousel-item active">
                         <h2 class="gallery__title">Фотографии стола в интерьере</h2>
                         <div class="gallery__pic">
                             <img src="assets/pics/gallery-pics/pic-1.jpg" width="940" height="367" alt="" class="gallery__img img-fluid">
                         </div>
                     </div>
+                    <div class="gallery__block carousel-item">
+                        <h2 class="gallery__title">Заголовок второго изображения</h2>
+                        <div class="gallery__pic">
+                            <img src="assets/pics/gallery-pics/pic-2.jpg" width="940" height="367" alt="" class="gallery__img img-fluid">
+                        </div>
+                    </div>
                 </div>
 
                 <div class="gallery__nav">
-                    <span class="gallery__arrow gallery__arrow_left"><span class="sprite-black-slider-arrow-left"></span></span>
-                    <span class="gallery__arrow gallery__arrow_right"><span class="sprite-black-slider-arrow-right"></span></span>
+                    <a href="#gallery" class="gallery__arrow gallery__arrow_left" data-slide="prev"><span class="sprite-black-slider-arrow-left"></span></a>
+                    <a href="#gallery" class="gallery__arrow gallery__arrow_right" data-slide="next"><span class="sprite-black-slider-arrow-right"></span></a>
                 </div>
             </section>
 
@@ -406,34 +444,66 @@
                     Отзывы счастливых<br class="hidden-xs">
                     обладателей наших столов
                 </h2>
-                <div class="reviews__content row">
-                    <div class="col-md-6">
-                        <div class="reviews__block">
-                            <div class="reviews__top">
-                                <img src="assets/pics/reviews-photo.jpg" width="55" height="55" alt="Алина" class="reviews__img">
-                                <div class="reviews__name">Алина</div>
-                            </div>
-                            <div class="reviews__text">
-                                Отзыв — мнение о ком-нибудь или о чём-нибудь, оценка кого-нибудь или чего-нибудь; анализ, разбор, некоторая оценка публикации, произведения или продукта.Отзыв — мнение о ком-нибудь или о чём-нибудь, оценка кого-нибудь или чего-нибудь; анализ, разбор.
+                <div class="reviews__content carousel slide carousel-fade" data-ride="carousel" id="reviews">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-6 reviews__col">
+                                    <div class="reviews__block">
+                                        <div class="reviews__top">
+                                            <img src="assets/pics/reviews-photo.jpg" width="55" height="55" alt="Алина" class="reviews__img">
+                                            <div class="reviews__name">Алина</div>
+                                        </div>
+                                        <div class="reviews__text">
+                                            Отзыв — мнение о ком-нибудь или о чём-нибудь, оценка кого-нибудь или чего-нибудь; анализ, разбор, некоторая оценка публикации, произведения или продукта.Отзыв — мнение о ком-нибудь или о чём-нибудь, оценка кого-нибудь или чего-нибудь; анализ, разбор.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 reviews__col">
+                                    <div class="reviews__block">
+                                        <div class="reviews__top">
+                                            <img src="assets/pics/reviews-photo.jpg" width="55" height="55" alt="Алина" class="reviews__img">
+                                            <div class="reviews__name">Дария</div>
+                                        </div>
+                                        <div class="reviews__text">
+                                            Чужое мнение о товаре или услуге, искреннее или купленное. В наше время используется как инструмент маркетинга
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="reviews__block">
-                            <div class="reviews__top">
-                                <img src="assets/pics/reviews-photo.jpg" width="55" height="55" alt="Алина" class="reviews__img">
-                                <div class="reviews__name">Алина</div>
-                            </div>
-                            <div class="reviews__text">
-                                Отзыв — мнение о ком-нибудь или о чём-нибудь, оценка кого-нибудь или чего-нибудь; анализ, разбор, некоторая оценка публикации, произведения или продукта.Отзыв — мнение о ком-нибудь или о чём-нибудь, оценка кого-нибудь или чего-нибудь; анализ, разбор.
+                        <div class="reviews__slide row carousel-item">
+                            <div class="row">
+                                <div class="col-md-6 reviews__col">
+                                    <div class="reviews__block">
+                                        <div class="reviews__top">
+                                            <img src="assets/pics/reviews-photo.jpg" width="55" height="55" alt="Алина" class="reviews__img">
+                                            <div class="reviews__name">Дария</div>
+                                        </div>
+                                        <div class="reviews__text">
+                                            Чужое мнение о товаре или услуге, искреннее или купленное. В наше время используется как инструмент маркетинга
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 reviews__col">
+                                    <div class="reviews__block">
+                                        <div class="reviews__top">
+                                            <img src="assets/pics/reviews-photo.jpg" width="55" height="55" alt="Алина" class="reviews__img">
+                                            <div class="reviews__name">Алина</div>
+                                        </div>
+                                        <div class="reviews__text">
+                                            Отзыв — мнение о ком-нибудь или о чём-нибудь, оценка кого-нибудь или чего-нибудь; анализ, разбор, некоторая оценка публикации, произведения или продукта.Отзыв — мнение о ком-нибудь или о чём-нибудь, оценка кого-нибудь или чего-нибудь; анализ, разбор.
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="reviews__nav">
-                    <span class="reviews__arrow reviews__arrow_left"><span class="sprite-white-slider-arrow-left"></span></span>
-                    <span class="reviews__arrow reviews__arrow_right"><span class="sprite-white-slider-arrow-right"></span></span>
+                    <a href="#reviews" class="reviews__arrow reviews__arrow_left" data-slide="prev"><span class="sprite-white-slider-arrow-left"></span></a>
+                    <a href="#reviews" class="reviews__arrow reviews__arrow_right" data-slide="next"><span class="sprite-white-slider-arrow-right"></span></a>
                 </div>
             </section>
 

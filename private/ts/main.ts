@@ -1,3 +1,3 @@
 $((): void => {
-    console.log('test');
+
 });

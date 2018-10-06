@@ -32,13 +32,21 @@ $component-selector: '.reviews';
         color: #fff;
     }
     &__content {
-        margin-top: 30px;
+        margin: 98px -15px 0;
+        .row {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+    &__col {
+        margin-top: 20px;
     }
     &__block {
         background-color: #fff;
         border-radius: 4px;
-        padding: 36px 45px 70px;
-        margin-top: 30px;
+        padding: 36px 45px 69px;
+        box-shadow: 0 12px 50px 0 rgba(69,143,201,0.24);
+        height: 100%;
     }
     &__top {
         @include clearfix();
@@ -80,6 +88,9 @@ $component-selector: '.reviews';
 
 @include media-breakpoint-down(lg) {
     #{$component-selector} {
+        &__content {
+            margin-top: 40px;
+        }
         &__nav {
             top: 42px;
         }
@@ -88,6 +99,9 @@ $component-selector: '.reviews';
 
 @include media-breakpoint-down(sm) {
     #{$component-selector} {
+        &__content {
+            margin-top: 20px;
+        }
         &__nav {
             top: 42px;
         }
@@ -101,6 +115,12 @@ $component-selector: '.reviews';
         }
         &__nav {
             top: 42px;
+        }
+        &__block {
+            padding: 20px;
+        }
+        &__text {
+            margin-top: 10px;
         }
     }
 }
