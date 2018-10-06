@@ -1,0 +1,23 @@
+$component-selector: '.contacts';
+
+#{$component-selector} {
+    margin-top: 160px;
+    text-align: center;
+    &__title {
+        font-size: $font-size-base * 26 / 16; // 26px
+        color: #000000;
+        letter-spacing: 0.63px;
+        line-height: 1;
+    }
+    &__number {
+        font-size: $font-size-base * 50 / 16; // 50px
+        color: $secondary;
+        font-weight: bold;
+    }
+    &__text {
+        opacity: 0.77;
+        color: #000000;
+        letter-spacing: 0.63px;
+        line-height: 39px;
+    }
+}

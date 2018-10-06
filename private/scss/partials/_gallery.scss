@@ -57,7 +57,7 @@ $component-selector: '.gallery';
     #{$component-selector} {
         margin-top: 40px;
         &__nav {
-            top: 0px;
+            top: 0;
         }
     }
 }

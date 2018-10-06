@@ -1,0 +1,106 @@
+$component-selector: '.reviews';
+
+#{$component-selector} {
+    position: relative;
+    margin-top: 64px;
+    padding: 42px 0 70px;
+    margin-bottom: 42px;
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: -2;
+        background-color: #74bdf6;
+        width: 1440px;
+        top: 0;
+        left: 50%;
+        bottom: 0;
+        margin-left: -720px;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        background: #74bdf6 url(../assets/img/bg-blue-bottom.png) no-repeat 50% 0;
+        width: 1440px;
+        height: 43px;
+        left: 50%;
+        bottom: -43px;
+        margin-left: -720px;
+    }
+    &__title {
+        margin-right: 120px;
+        color: #fff;
+    }
+    &__content {
+        margin-top: 30px;
+    }
+    &__block {
+        background-color: #fff;
+        border-radius: 4px;
+        padding: 36px 45px 70px;
+        margin-top: 30px;
+    }
+    &__top {
+        @include clearfix();
+        overflow: hidden;
+    }
+    &__img {
+        float: left;
+        border-radius: 27.5px;
+    }
+    &__name {
+        font-size: $font-size-base * 20 / 16; // 20px
+        color: #242020;
+        margin: 14px 0 0 76px;
+        font-weight: bold;
+        letter-spacing: 0.61px;
+    }
+    &__text {
+        color: #9CA8C0;
+        letter-spacing: 0.61px;
+        line-height: 24px;
+        margin-top: 28px;
+    }
+    &__nav {
+        position: absolute;
+        top: 45px;
+        right: 0;
+        width: 112px;
+    }
+    &__arrow {
+        cursor: pointer;
+        margin: 0 8px;
+        padding: 10px 0;
+        @include transition(opacity .2s ease-in-out);
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    #{$component-selector} {
+        &__nav {
+            top: 42px;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    #{$component-selector} {
+        &__nav {
+            top: 42px;
+        }
+    }
+}
+
+@include media-breakpoint-down(xs) {
+    #{$component-selector} {
+        &__content {
+            margin-top: 0;
+        }
+        &__nav {
+            top: 42px;
+        }
+    }
+}
