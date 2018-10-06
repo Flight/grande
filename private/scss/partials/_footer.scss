@@ -1,5 +1,103 @@
 $component-selector: '.footer';
 
 #{$component-selector} {
+    position: relative;
+    margin-top: 74px;
+    padding-top: 99px;
+    &__map {
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        left: 50%;
+        margin-left: -720px;
+    }
 
+    &-contacts {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 460px;
+        margin-left: -470px;
+        background: #fff;
+        &__top {
+            background: #21201d;
+            border-radius: 4px 4px 0 0;
+            text-align: center;
+            padding: 19px 15px 15px 0;
+        }
+        &__content {
+            padding: 21px 42px 24px 62px;
+            color: $black;
+            letter-spacing: 0.63px;
+            line-height: 39px;
+
+            a {
+                &, &:hover, &:focus, &:active {
+                    color: $black;
+                }
+            }
+        }
+        &__block {
+            margin-bottom: 15px;
+            &_text {
+                margin-top: 25px;
+                line-height: 1.5;
+            }
+        }
+        &__big {
+            margin-top: 2px;
+            font-weight: bold;
+            font-size: $font-size-base * 30 / 16; // 30px
+        }
+        &__bottom {
+            color: $white;
+            background: $secondary;
+            padding: 17px 43px 16px 66px;
+            letter-spacing: 0.63px;
+            line-height: 39px;
+        }
+        &__icons {
+            float: right;
+            position: relative;
+            top: 2px;
+        }
+        &__icon {
+            @include transition(opacity .2s ease-in-out);
+            margin-left: 50px;
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    #{$component-selector} {
+        &-contacts {
+            width: 460px;
+            margin-left: -230px;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    #{$component-selector} {
+        &-contacts {
+            width: 300px;
+            margin-left: -150px;
+            &__content {
+                padding: 20px;
+                line-height: 1.5;
+            }
+            &__big {
+                font-size: $font-size-base;
+            }
+            &__bottom {
+                padding: 17px 20px 16px;
+            }
+            &__icon {
+                margin-left: 20px;
+            }
+        }
+    }
 }
