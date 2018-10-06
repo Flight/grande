@@ -6,7 +6,6 @@ $form-color: #F5B540;
     border: 1px solid #FAFAFA;
     box-shadow: 0 10px 39px 0 rgba(195,128,7,0.23);
     margin: 118px -21px 0;
-    display: flex;
 
     &__left {
         width: 54%;
@@ -92,6 +91,9 @@ $form-color: #F5B540;
 }
 @include media-breakpoint-down(md) {
     #{$component-selector} {
+        margin-top: 60px;
+        margin-left: 0;
+        margin-right: 0;
         &__right {
             padding-left: 30px;
         }
@@ -104,7 +106,6 @@ $form-color: #F5B540;
 
 @include media-breakpoint-down(sm) {
     #{$component-selector} {
-        display: block;
         &__left {
             width: auto;
             padding: 25px;

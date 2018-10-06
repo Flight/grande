@@ -21,3 +21,27 @@ $component-selector: '.contacts';
         line-height: 39px;
     }
 }
+
+@include media-breakpoint-down(md) {
+    #{$component-selector} {
+        margin-top: 140px;
+        &__title {
+            font-size: $font-size-base * 22 / 16; // 22px
+        }
+        &__number {
+            font-size: $font-size-base * 36 / 16; // 36px
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    #{$component-selector} {
+        margin-top: 100px;
+        &__title {
+            font-size: $font-size-base * 20 / 16; // 20px
+        }
+        &__number {
+            font-size: $font-size-base * 26 / 16; // 26px
+        }
+    }
+}
