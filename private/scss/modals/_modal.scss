@@ -1,5 +1,24 @@
 $component-selector: '.modal';
 
 #{$component-selector} {
-
+    &-content {
+        box-shadow: 0 12px 50px 0 rgba(50,89,117,0.26);
+    }
+    &-dialog {
+        max-width: 436px;
+    }
+    &-close {
+        cursor: pointer;
+        position: absolute;
+        top: 5px;
+        right: 15px;
+        line-height: 1;
+        z-index: 1;
+        font-size: 46px;
+        color: #787878;
+        @include transition(opacity .2s ease-in-out);
+        &:hover {
+            color: rgba(#787878, 0.7);
+        }
+    }
 }

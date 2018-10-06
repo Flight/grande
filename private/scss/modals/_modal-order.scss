@@ -1,0 +1,40 @@
+$component-selector: '.modal-order';
+
+#{$component-selector} {
+    width: 258px;
+    margin: 0 auto;
+    padding: 60px 0 75px;
+    &__title {
+        font-size: $font-size-base * 30 / 16; // 30px
+        font-weight: bold;
+        color: #353535;
+        letter-spacing: 0.99px;
+        line-height: 1.2;
+    }
+    &__info {
+        margin: 13px 0 40px;
+    }
+    &__small {
+        margin-top: 15px;
+        font-size: $font-size-base * 12 / 16; // 16px
+    }
+    .form-control {
+        font-size: $font-size-sm;
+        border-bottom: solid 1px #b3bccf;
+        height: 40px;
+        margin: 20px 0;
+        border-radius: 0;
+        padding: 0 8px;
+        text-indent: 0;
+
+        &, &::placeholder {
+            color: #9CA8C0;
+        }
+    }
+    select.form-control {
+        margin-top: 25px;
+    }
+    &__submit {
+        margin-top: 30px;
+    }
+}

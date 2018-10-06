@@ -26,6 +26,12 @@ ul {
 .btn {
     font-size: $font-size-sm;
     letter-spacing: 0.5px;
+
+    &-primary, &-secondary {
+        &, &:hover {
+            color: $white;
+        }
+    }
     &_arrow {
         .arrow {
             margin-left: 98px;
