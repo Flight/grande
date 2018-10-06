@@ -51,7 +51,7 @@
                                 стол по цене на 30% ниже аналогов
                             </p>
                             <div class="header-slider__button">
-                                <a href="#" class="btn btn-primary btn_arrow">ЗАКАЗАТЬ <span class="arrow sprite-white-arrow-right"></span></a>
+                                <a href="#" class="btn btn-primary btn_arrow" data-toggle="modal" data-target="#order-modal">ЗАКАЗАТЬ <span class="arrow sprite-white-arrow-right"></span></a>
                             </div>
                         </div>
                     </div>
@@ -64,7 +64,7 @@
                                 прекрасного стола
                             </p>
                             <div class="header-slider__button">
-                                <a href="#" class="btn btn-primary btn_arrow">ЗАКАЗАТЬ <span class="arrow sprite-white-arrow-right"></span></a>
+                                <a href="#" class="btn btn-primary btn_arrow" data-toggle="modal" data-target="#order-modal">ЗАКАЗАТЬ <span class="arrow sprite-white-arrow-right"></span></a>
                             </div>
                         </div>
                     </div>
@@ -77,7 +77,7 @@
                                 эрогомичный стул
                             </p>
                             <div class="header-slider__button">
-                                <a href="#" class="btn btn-primary btn_arrow">ЗАКАЗАТЬ <span class="arrow sprite-white-arrow-right"></span></a>
+                                <a href="#" class="btn btn-primary btn_arrow" data-toggle="modal" data-target="#order-modal">ЗАКАЗАТЬ <span class="arrow sprite-white-arrow-right"></span></a>
                             </div>
                         </div>
                     </div>
@@ -356,20 +356,38 @@
                 <h2 hidden>Оформление заказа</h2>
                 <div class="order__content row">
                     <div class="order__left col-12 col-md-auto order-1 order-md-0">
-                        <div class="order-gallery carousel slide carousel-fade" id="order-gallery">
+                        <div class="order-gallery carousel slide carousel-fade" id="order-gallery-school">
                             <div class="carousel-inner">
                                 <div class="order-gallery__big text-center carousel-item active"><img src="assets/pics/order-pics/pic-1.jpg" alt="" width="277" height="284"></div>
                                 <div class="order-gallery__big text-center carousel-item"><img src="assets/pics/order-pics/pic-2.jpg" alt="" width="277" height="284"></div>
                                 <div class="order-gallery__big text-center carousel-item"><img src="assets/pics/order-pics/pic-3.jpg" alt="" width="277" height="284"></div>
                             </div>
                             <ul class="order-gallery__thumbs row align-items-center justify-content-center carousel-indicators">
-                                <a class="order-gallery__thumb col-auto text-center active" href="#order-gallery" data-slide-to="0">
+                                <a class="order-gallery__thumb col-auto text-center active" href="#order-gallery-school" data-slide-to="0">
                                     <img src="assets/pics/order-pics/pic-1-small.jpg" alt="" width="62" height="60">
                                 </a>
-                                <a class="order-gallery__thumb col-auto text-center" href="#order-gallery" data-slide-to="1">
+                                <a class="order-gallery__thumb col-auto text-center" href="#order-gallery-school" data-slide-to="1">
                                     <img src="assets/pics/order-pics/pic-2-small.jpg" alt="" width="126" height="87">
                                 </a>
-                                <a class="order-gallery__thumb col-auto text-center" href="#order-gallery" data-slide-to="2">
+                                <a class="order-gallery__thumb col-auto text-center" href="#order-gallery-school" data-slide-to="2">
+                                    <img src="assets/pics/order-pics/pic-3-small.jpg" alt="" width="126" height="87">
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="order-gallery carousel slide carousel-fade" id="order-gallery-office" hidden>
+                            <div class="carousel-inner">
+                                <div class="order-gallery__big text-center carousel-item active"><img src="assets/pics/order-pics/pic-2.jpg" alt="" width="277" height="284"></div>
+                                <div class="order-gallery__big text-center carousel-item"><img src="assets/pics/order-pics/pic-1.jpg" alt="" width="277" height="284"></div>
+                                <div class="order-gallery__big text-center carousel-item"><img src="assets/pics/order-pics/pic-3.jpg" alt="" width="277" height="284"></div>
+                            </div>
+                            <ul class="order-gallery__thumbs row align-items-center justify-content-center carousel-indicators">
+                                <a class="order-gallery__thumb col-auto text-center active" href="#order-gallery-office" data-slide-to="0">
+                                    <img src="assets/pics/order-pics/pic-2-small.jpg" alt="" width="126" height="87">
+                                </a>
+                                <a class="order-gallery__thumb col-auto text-center" href="#order-gallery-office" data-slide-to="1">
+                                    <img src="assets/pics/order-pics/pic-1-small.jpg" alt="" width="62" height="60">
+                                </a>
+                                <a class="order-gallery__thumb col-auto text-center" href="#order-gallery-office" data-slide-to="2">
                                     <img src="assets/pics/order-pics/pic-3-small.jpg" alt="" width="126" height="87">
                                 </a>
                             </ul>
@@ -391,33 +409,86 @@
                     </div>
                     <div class="order__right col-12 col-md-auto order-0 order-md-1">
                         <div class="order__title">Выберите модель стола</div>
-                        <form class="order__form">
+                        <script id="order-form-json" type="application/json">
+                            {
+                                "models": [{
+                                    "id": "school",
+                                    "name": "Школьный",
+                                    "metals": [
+                                        {
+                                            "id": "black",
+                                            "name": "Черный"
+                                        }, {
+                                            "id": "red",
+                                            "name": "Красный"
+                                        }
+                                    ],
+                                    "sides": [
+                                        {
+                                            "id": "white",
+                                            "name": "Белый"
+                                        }, {
+                                            "id": "black",
+                                            "name": "Черный"
+                                        }
+                                    ],
+                                    "price": "150 BYN"
+                                },
+                                {
+                                    "id": "office",
+                                    "name": "Офисный",
+                                    "metals": [
+                                        {
+                                            "id": "red",
+                                            "name": "Красный"
+                                        },
+                                        {
+                                            "id": "black",
+                                            "name": "Черный"
+                                        }
+                                    ],
+                                    "sides": [
+                                        {
+                                            "id": "black",
+                                            "name": "Черный"
+                                        },
+                                        {
+                                            "id": "white",
+                                            "name": "Белый"
+                                        }
+                                    ],
+                                    "price": "250 BYN"
+                                }]
+                            }
+                        </script>
+                        <form method="GET" action="/" id="order-form" class="order__form">
                             <div class="form-group">
-                                <label for="model">Модель</label>
-                                <select id="model" class="form-control">
-                                    <option value="school">Школьный</option>
+                                <label for="order-form-model">Модель</label>
+                                <select id="order-form-model" name="model" class="form-control">
                                 </select>
                             </div>
-                            <div class="form-group">
-                                <label for="metal">Металл</label>
-                                <select id="metal" class="form-control">
-                                    <option value="school">Черный</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="side">Кромка</label>
-                                <select id="side" class="form-control">
-                                    <option value="school">Белая</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="size">Размер</label>
-                                <input id="size" value="180x60" class="form-control" readonly>
-                            </div>
+                            <script id="order-form-template" type="text/x-custom-template">
+                                <div id="order-form-template">
+                                    <div class="form-group">
+                                        <label for="order-form-metal">Металл</label>
+                                        <select id="order-form-metal" name="metal" class="form-control">
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="order-form-side">Кромка</label>
+                                        <select id="order-form-side" name="side" class="form-control">
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="order-form-size">Размер</label>
+                                        <input id="order-form-size" value="180x60" class="form-control" disabled>
+                                    </div>
 
-                            <div class="order__price">150 BYN</div>
+                                    <div class="order__price" id="order-form-price">150 BYN</div>
+                                </div>
+                            </script>
 
-                            <button tpye="submit" class="btn btn_arrow">ЗАКАЗАТЬ <span class="arrow sprite-orange-arrow-right"></span></button>
+                            <button type="submit" class="btn btn_arrow">ЗАКАЗАТЬ <span class="arrow sprite-orange-arrow-right"></span></button>
                         </form>
                     </div>
                 </div>
@@ -546,6 +617,39 @@
                 </div>
             </div>
         </footer>
+
+        <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" id="order-modal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <span class="modal-close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </span>
+                    <div class="modal-main-content modal-order">
+                        <div class="modal-order__title">Оставьте вашу заявку</div>
+                        <div class="modal-order__info">
+                            И наш менеджер свяжется с вами в течение 3х минут
+                        </div>
+
+
+                        <input type="text" placeholder="Имя" class="form-control">
+                        <input type="text" placeholder="Телефон" class="form-control">
+
+                        <select name="" id="" class="form-control">
+                            <option>Выберите модель</option>
+                        </select>
+
+                        <button type="submit" class="modal-order__submit btn btn-secondary btn_arrow">
+                            ЗАКАЗАТЬ
+                            <span class="arrow sprite-white-arrow-right"></span>
+                        </button>
+
+                        <div class="modal-order__small">
+                            Нажимая кнопку, вы принимаете Положение и Согласие на обработку персональных данных
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
