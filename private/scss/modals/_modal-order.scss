@@ -38,3 +38,15 @@ $component-selector: '.modal-order';
         margin-top: 30px;
     }
 }
+
+@include media-breakpoint-down(sm) {
+    #{$component-selector} {
+        padding: 40px 0 30px;
+        &__info {
+            margin-bottom: 20px;
+        }
+        &__submit {
+            margin-top: 15px;
+        }
+    }
+}
