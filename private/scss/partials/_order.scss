@@ -14,8 +14,11 @@ $form-color: #F5B540;
     &-gallery {
         &__thumbs {
             margin-top: 10px;
+            position: static;
+            margin: 10px 0 0 0;
         }
         &__thumb {
+            display: block;
             opacity: .5;
             @include transition(opacity .2s ease-in-out);
             &.active, &:hover {

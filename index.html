@@ -356,24 +356,22 @@
                 <h2 hidden>Оформление заказа</h2>
                 <div class="order__content row">
                     <div class="order__left col-12 col-md-auto order-1 order-md-0">
-                        <div class="order-gallery">
-                            <div class="order-gallery__big text-center"><img src="assets/pics/order-pics/pic-1.jpg" alt="" width="277" height="284"></div>
-                            <ul class="order-gallery__thumbs row align-items-center justify-content-center">
-                                <li class="order-gallery__thumb col-auto text-center active">
-                                    <a href="#">
-                                        <img src="assets/pics/order-pics/pic-1-small.jpg" alt="" width="62" height="60">
-                                    </a>
-                                </li>
-                                <li class="order-gallery__thumb col-auto text-center">
-                                    <a href="#">
-                                        <img src="assets/pics/order-pics/pic-2-small.jpg" alt="" width="126" height="87">
-                                    </a>
-                                </li>
-                                <li class="order-gallery__thumb col-auto text-center">
-                                    <a href="#">
-                                        <img src="assets/pics/order-pics/pic-3-small.jpg" alt="" width="126" height="87">
-                                    </a>
-                                </li>
+                        <div class="order-gallery carousel slide carousel-fade" id="order-gallery">
+                            <div class="carousel-inner">
+                                <div class="order-gallery__big text-center carousel-item active"><img src="assets/pics/order-pics/pic-1.jpg" alt="" width="277" height="284"></div>
+                                <div class="order-gallery__big text-center carousel-item"><img src="assets/pics/order-pics/pic-2.jpg" alt="" width="277" height="284"></div>
+                                <div class="order-gallery__big text-center carousel-item"><img src="assets/pics/order-pics/pic-3.jpg" alt="" width="277" height="284"></div>
+                            </div>
+                            <ul class="order-gallery__thumbs row align-items-center justify-content-center carousel-indicators">
+                                <a class="order-gallery__thumb col-auto text-center active" href="#order-gallery" data-slide-to="0">
+                                    <img src="assets/pics/order-pics/pic-1-small.jpg" alt="" width="62" height="60">
+                                </a>
+                                <a class="order-gallery__thumb col-auto text-center" href="#order-gallery" data-slide-to="1">
+                                    <img src="assets/pics/order-pics/pic-2-small.jpg" alt="" width="126" height="87">
+                                </a>
+                                <a class="order-gallery__thumb col-auto text-center" href="#order-gallery" data-slide-to="2">
+                                    <img src="assets/pics/order-pics/pic-3-small.jpg" alt="" width="126" height="87">
+                                </a>
                             </ul>
                         </div>
                         <div class="order-info row justify-content-center">

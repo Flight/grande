@@ -116,6 +116,8 @@ $component-selector: '.header';
             left: 50%;
             z-index: 200;
             margin-left: 22.7%;
+            right: auto;
+            display: block;
         }
         &__page {
             cursor: pointer;
