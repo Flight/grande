@@ -18,10 +18,8 @@ $component-selector: '.purposes';
         padding: 28px 30px 43px;
     }
     &__number {
-        font-family: $font-family-alt;
         color: $secondary;
         font-size: $font-size-base * 70 / 16; // 70px
-        font-weight: bold;
         position: relative;
         line-height: 1;
     }
