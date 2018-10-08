@@ -36,7 +36,7 @@
                     </nav>
                     <div class="header-contacts">
                         <div class="header-contacts__phone">+375(44) 703 02 69</div>
-                        <div class="header-contacts__small"><a href="#">Вам перезвонить?</a></div>
+                        <div class="header-contacts__small"><a href="#order-modal" data-toggle="modal">Вам перезвонить?</a></div>
                     </div>
                 </div>
             </div>
@@ -588,7 +588,7 @@
         </div>
 
         <footer class="footer">
-            <img src="assets/pics/footer-map.jpg" width="1440" height="525" alt="" class="footer__map">
+            <div class="mapouter" class="footer__map"><div class="gmap_canvas"><iframe width="1440" height="525" id="gmap_canvas" src="https://maps.google.com/maps?q=%D0%9C%D0%B8%D0%BD%D1%81%D0%BA%20%D1%83%D0%BB.%20%D0%A0%D0%B0%D1%82%D0%BE%D0%BC%D1%81%D0%BA%D0%B0%D1%8F%201%D0%91&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{text-align:right;height:525px;width:1440px;}.gmap_canvas {overflow:hidden;background:none!important;height:525px;width:1440px;}</style></div>
             <div class="footer-contacts">
                 <div class="footer-contacts__top">
                     <a href="/"><img src="assets/img/footer-logo.png" width="177" height="45" alt="LaScala Grande"></a>
@@ -616,6 +616,59 @@
                     </div>
                 </div>
             </div>
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-bottom__left col-sm-3">
+                            <div class="footer-bottom__logo">
+                                <a href="#"><img src="assets/img/footer-logo-small.png" width="119" height="31" alt="LaScala Grande"></a>
+                            </div>
+                            <div class="footer-bottom__copy">
+                                Все права защищены, 2018.
+                            </div>
+                        </div>
+
+                        <div class="footer-bottom__right col-sm-9">
+                            <nav class="footer-bottom__nav">
+                                <ul class="footer-bottom__list row">
+                                    <li class="footer-bottom__item col-6 col-sm-4">
+                                        <a href="#" class="footer-bottom__link">Главный</a>
+                                    </li>
+                                    <li class="footer-bottom__item col-6 col-sm-4">
+                                        <a href="#" class="footer-bottom__link">Прайс-лист</a>
+                                    </li>
+                                    <li class="footer-bottom__item col-6 col-sm-4">
+                                        <a href="#" class="footer-bottom__link">Дизайнерам</a>
+                                    </li>
+                                    <li class="footer-bottom__item col-6 col-sm-4">
+                                        <a href="#" class="footer-bottom__link">Для кого</a>
+                                    </li>
+                                    <li class="footer-bottom__item col-6 col-sm-4">
+                                        <a href="#" class="footer-bottom__link">Отзывы</a>
+                                    </li>
+                                    <li class="footer-bottom__item col-6 col-sm-4">
+                                        <a href="#" class="footer-bottom__link">Опт</a>
+                                    </li>
+                                    <li class="footer-bottom__item col-6 col-sm-4">
+                                        <a href="#" class="footer-bottom__link">Типы столов</a>
+                                    </li>
+                                    <li class="footer-bottom__item col-6 col-sm-4">
+                                        <a href="#" class="footer-bottom__link">Контакты</a>
+                                    </li>
+                                    <li class="footer-bottom__item col-6 col-sm-4">
+                                        <a href="#" class="footer-bottom__link">Lascalagrande.by</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-small">
+                ЧП Лессервис Плюс - Производство деревянной мебели
+            </div>
         </footer>
 
         <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" id="order-modal">
@@ -629,7 +682,6 @@
                         <div class="modal-order__info">
                             И наш менеджер свяжется с вами в течение 3х минут
                         </div>
-
 
                         <input type="text" placeholder="Имя" class="form-control">
                         <input type="text" placeholder="Телефон" class="form-control">

@@ -33,9 +33,9 @@ $form-color: #F5B540;
         }
         &__text {
             margin-left: 40px;
-            font-size: $font-size-sm;
+            font-size: $font-size-base * 12 / 16; // 12px
         }
-        &__block{
+        &__block {
             margin-top: 15px;
             &:first-child {
                 #{$component-selector}-info {
