@@ -1,7 +1,19 @@
 $component-selector: '.purposes';
 
 #{$component-selector} {
-    margin: 62px 0 0;
+    padding: 62px 0 0;
+    position: relative;
+    &:before {
+        content: '';
+        background-color: #f8f9fa;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 1440px;
+        margin-left: -720px;
+        bottom: -43px;
+        z-index: -1;
+    }
 
     &__list {
         margin-top: 21px;

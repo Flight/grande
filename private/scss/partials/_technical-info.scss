@@ -9,6 +9,7 @@ $component-selector: '.technical-info';
         position: absolute;
         background:  url(../assets/img/bg-light-blue.png) 50% 0 no-repeat;
         width: 1440px;
+        height: 217px;
         top: -70px;
         bottom: 0;
         left: 50%;
@@ -18,7 +19,7 @@ $component-selector: '.technical-info';
     &::after {
         content: '';
         position: absolute;
-        background-image: linear-gradient(#f1f6fa 217px, #f3f7fa 100%);
+        background-image: linear-gradient(#f8f9fa 0, #f8f9fa 146px,#f1f6fa 147px, #f3f7fa 100%);
         width: 1440px;
         top: 0;
         right: 0;

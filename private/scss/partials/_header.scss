@@ -34,11 +34,12 @@ $component-selector: '.header';
     &-nav {
         margin: 27px 200px 0 113px;
         font-size: $font-size-base * 13 / 16; // 13px
+        font-weight: 600;
         &__item {
             display: inline;
         }
         &__link {
-            margin: 0 15px;
+            margin: 0 13px;
         }
     }
     &-contacts {
@@ -48,8 +49,9 @@ $component-selector: '.header';
         right: 0;
         &__phone {
             font-size: $font-size-base * 17 / 16; // 17px
-            letter-spacing: 0.75px;
+            letter-spacing: 0.4px;
             line-height: 1;
+            font-weight: 700;
         }
         &__small {
             font-size: 11px;
