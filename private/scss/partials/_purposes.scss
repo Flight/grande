@@ -22,14 +22,19 @@ $component-selector: '.purposes';
         margin-top: 20px;
     }
     &__block{
+        display: block;
         background: #FFFFFF;
         border-radius: 4px;
         box-shadow: 0 0 65px 0 rgba(164,179,183,1);
         margin: 0 -5px;
         height: 100%;
         padding: 28px 30px 43px;
+        &:hover {
+            text-decoration: none;
+        }
     }
     &__number {
+        display: block;
         color: $secondary;
         font-size: $font-size-base * 70 / 16; // 70px
         position: relative;
@@ -42,11 +47,13 @@ $component-selector: '.purposes';
         left: 21px;
     }
     &__name {
+        display: block;
         color: #252728;
         font-weight: bold;
         margin-top: 10px;
     }
     &__text {
+        display: block;
         font-size: $font-size-sm;
         color: #9CA8C0;
         margin-top: 11px;
