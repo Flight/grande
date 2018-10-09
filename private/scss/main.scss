@@ -39,7 +39,16 @@ ul {
     }
 }
 select.form-control {
-    text-indent: 20px;
+    padding: .375rem 1.8rem;
+    height: 51px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAICAYAAAAiJnXPAAAABGdBTUEAALGPC/xhBQAAAJVJREFUGBljZACC////czIwvGQCsQkD8R+Mf769CmX4zzCRsGKIiv///t9hYmb6fxZo01tiNTGwMO5gYuQQv8fCwhlCjEagLbNYOcXaGGE2/P/xSf3Pn+9rGBkZhWFiyDRYA694A0gMrgnEwaURWQNIHQYAafz95eXlP19fPQPh359fNmAowiYA1vj11fHf319VYZMHAKMeT0LGeuDyAAAAAElFTkSuQmCC') 92% / 15% no-repeat transparent;
+    background-size: 13px 7px;
+    &::-ms-expand {
+        display: none;
+    }
 }
 
 h1, .h1 {
