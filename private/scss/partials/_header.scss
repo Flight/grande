@@ -68,17 +68,7 @@ $component-selector: '.header';
             top: 0;
             left: 50%;
             transform: translateX(-50%);
-            right: 0;
             text-align: center;
-            &_left {
-                transform: translateX(0);
-                left: 0;
-                right: auto;
-            }
-            &_right {
-                transform: translateX(0);
-                left: auto;
-            }
         }
         &__content {
             padding: 165px 17px 50px;
