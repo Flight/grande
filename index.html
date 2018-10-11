@@ -43,20 +43,12 @@
             <div class="header-slider carousel slide carousel-fade" data-ride="carousel" id="header-gallery">
                 <div class="carousel-inner">
                     <div class="header-slider__block carousel-item active">
-                        <img src="assets/pics/header-pics/pic-1-1440w.jpg"
-                            srcset="
-                                assets/pics/header-pics/pic-1-576w.jpg 576w,
-                                assets/pics/header-pics/pic-1-768w.jpg 768w,
-                                assets/pics/header-pics/pic-1-992w.jpg 992w,
-                                assets/pics/header-pics/pic-1-1440w.jpg 1440w
-                            "
-                            sizes="
-                                (max-width: 576px) 576px,
-                                (max-width: 768px) 768px,
-                                (max-width: 992px) 992px,
-                                1440px
-                            "
-                            class="header-slider__pic">
+                        <picture>
+                            <source srcset="assets/pics/header-pics/pic-1-1440w.jpg" media="(min-width: 992px)">
+                            <source srcset="assets/pics/header-pics/pic-1-992w.jpg" media="(min-width: 768px)">
+                            <source srcset="assets/pics/header-pics/pic-1-768w.jpg" media="(min-width: 576px)">
+                            <img src="assets/pics/header-pics/pic-1-576w.jpg" class="header-slider__pic">
+                        </picture>
                         <div class="container header-slider__content">
                             <h1>Эргономичный<br class="hidden-xs">стол в стиле лофт</h1>
                             <p class="header-slider__text">
@@ -69,20 +61,12 @@
                         </div>
                     </div>
                     <div class="header-slider__block carousel-item">
-                        <img src="assets/pics/header-pics/pic-2-1440w.jpg"
-                            srcset="
-                                assets/pics/header-pics/pic-2-576w.jpg 576w,
-                                assets/pics/header-pics/pic-2-768w.jpg 768w,
-                                assets/pics/header-pics/pic-2-992w.jpg 992w,
-                                assets/pics/header-pics/pic-2-1440w.jpg 1440w
-                            "
-                            sizes="
-                                (max-width: 576px) 576px,
-                                (max-width: 768px) 768px,
-                                (max-width: 992px) 992px,
-                                1440px
-                            "
-                            class="header-slider__pic">
+                        <picture>
+                            <source srcset="assets/pics/header-pics/pic-2-1440w.jpg" media="(min-width: 992px)">
+                            <source srcset="assets/pics/header-pics/pic-2-992w.jpg" media="(min-width: 768px)">
+                            <source srcset="assets/pics/header-pics/pic-2-768w.jpg" media="(min-width: 576px)">
+                            <img src="assets/pics/header-pics/pic-2-576w.jpg" class="header-slider__pic">
+                        </picture>
                         <div class="container header-slider__content">
                             <h1>Ещё один стол,<br class="hidden-xs">немного менее эргономичный</h1>
                             <p class="header-slider__text">
@@ -95,20 +79,12 @@
                         </div>
                     </div>
                     <div class="header-slider__block carousel-item">
-                        <img src="assets/pics/header-pics/pic-3-1440w.jpg"
-                            srcset="
-                                assets/pics/header-pics/pic-3-576w.jpg 576w,
-                                assets/pics/header-pics/pic-3-768w.jpg 768w,
-                                assets/pics/header-pics/pic-3-992w.jpg 992w,
-                                assets/pics/header-pics/pic-3-1440w.jpg 1440w
-                            "
-                            sizes="
-                                (max-width: 576px) 576px,
-                                (max-width: 768px) 768px,
-                                (max-width: 992px) 992px,
-                                1440px
-                            "
-                            class="header-slider__pic">
+                        <picture>
+                            <source srcset="assets/pics/header-pics/pic-3-1440w.jpg" media="(min-width: 992px)">
+                            <source srcset="assets/pics/header-pics/pic-3-992w.jpg" media="(min-width: 768px)">
+                            <source srcset="assets/pics/header-pics/pic-3-768w.jpg" media="(min-width: 576px)">
+                            <img src="assets/pics/header-pics/pic-3-576w.jpg" class="header-slider__pic">
+                        </picture>
                         <div class="container header-slider__content">
                             <h1>Ещё более<br class="hidden-xs">эргономичный стул</h1>
                             <p class="header-slider__text">
